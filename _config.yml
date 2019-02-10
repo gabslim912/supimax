@@ -14,6 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: SUP IMAX
+collections:
+  posts:
+    title: Posts
+    output: true
+  domaines:
+    title: domaines
+    output: true
 email: info@supimax.com
 tel: 33 845 55 55
 description: >- # this means to ignore newlines until "baseurl:"

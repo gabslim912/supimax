@@ -68,37 +68,12 @@ layout: default
 <div class="ptb-100"> 
     <div class="container">
         <div class="categorie-slider owl-carousel owl-theme"> 
-            <div class="single-categorie cag-bg-1">
-                <a href="#">Technology</a>
+          {% for domaine in site.domaines %}
+            <div class="single-categorie " style=" background-image: url({{ domaine.image }}); width: 100%; height: 172px">
+                <a href="#">{{ domaine.title }}</a>
             </div>
-
-            <div class="single-categorie cag-bg-2">
-                <a href="#">Business</a>
-            </div>
-
-            <div class="single-categorie cag-bg-3">
-                <a href="#">Education</a>
-            </div>
-
-            <div class="single-categorie cag-bg-4">
-                <a href="#">Economy</a>
-            </div>
-
-            <div class="single-categorie cag-bg-5">
-                <a href="#">Humanities</a>
-            </div>
-
-            <div class="single-categorie cag-bg-6">
-                <a href="#">Social Sciences</a>
-            </div>
-
-            <div class="single-categorie cag-bg-7">
-                <a href="#">Management</a>
-            </div>
-
-            <div class="single-categorie cag-bg-8">
-                <a href="#">Journilsm</a>
-            </div>
+          {% endfor %}
+            
         </div>
        
     </div> 
