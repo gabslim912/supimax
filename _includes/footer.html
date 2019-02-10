@@ -1,35 +1,183 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<!-- Our Partner -->
+<div class="our-partner pt-100 pb-180">
+   <div class="container">
+       <div class="partner-carosel owl-carousel owl-theme owl-theme-s2">
+            <!-- Partner #1 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/1.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #2 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/2.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #3 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/3.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #4 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/4.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #5 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/5.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #6 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/1.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #7 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/2.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #8 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/3.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #9 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/4.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #10 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/5.png" alt="partner"></a>
+            </div>
+       </div>
+   </div>
+</div>
+<!-- End Our Partner -->
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+<!-- Footer Area -->
+        <footer class="footer-area ptb-100">
+            <div class="container">
+                <div class="contact-information-box">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="media single-box bor-right">
+                                <div class="align-self-center mr-3">
+                                    <i class="icofont-google-map"></i>
+                                </div>
+                                
+                                <div class="media-body">
+                                    <h3>Adresse</h3>
+                                    <p>{{ site.adresse }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="media single-box bor-right">
+                                <div class="align-self-center mr-3">
+                                    <i class="icofont-envelope"></i>
+                                </div>
+                                
+                                <div class="media-body">
+                                    <h3>Email</h3>
+                                    <p><a href="#">{{ site.email }}</a></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="media single-box">
+                                <div class="align-self-center mr-3">
+                                    <i class="icofont-phone"></i>
+                                </div>
+                                
+                                <div class="media-body">
+                                    <h3>Telephone</h3>
+                                    <p><a href="#">{{ site.tel }}</a></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-7 col-md-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h3>A propos de nous</h3>
+                            <p class="text-justify">{{ site.description }}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-5 col-md-6 col-lg-3">
+                        <div class="single-footer-widget pl-30">
+                            <h3>Liens rapides</h3>
+                            <ul class="quick-menu">
+                                <li><a href="/"><i class="icofont-thin-double-right"></i> Accueil</a></li>
+                                <li><a href="#"><i class="icofont-thin-double-right"></i> Présentation</a></li>
+                                <li><a href="#"><i class="icofont-thin-double-right"></i> Actualités</a></li>
+                                <li><a href="#"><i class="icofont-thin-double-right"></i> Mentions Légales</a></li>
+                                <li><a href="#"><i class="icofont-thin-double-right"></i> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h3>Instagram Feed</h3>
+                            <ul class="instagram-feed">
+                                <li><a href="#"><img src="assets/img/instagram-feed/1.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/2.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/3.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/4.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/5.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/6.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/5.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/2.jpg" alt="Instagram image"></a></li>
+                                <li><a href="#"><img src="assets/img/instagram-feed/1.jpg" alt="Instagram image"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h3>Newsletter</h3>
+                            
+                            <div class="newsletter">
+                                <p>Lorem ipsum dolor, consectetur adipisicing sed do eiusmod tempor.</p>
+                                <p>Ut enim ad minim veniam, quis nostrud Svoluptatem.</p>
+                                <form>
+                                    <input type="text" placeholder="Enter Your Email" class="form-control">
+                                    <button type="submit" class="submit-btn"><i class="icofont-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+        
+        <!-- Bottom footer -->
+        <div class="bottom-footer">
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-md-6 col-lg-6"> 
+                        <p>© SUP'IMAX 2019, All Rights Reserved by <a href="https://revovision.ca" target="_blank">REVOVISION SÉNÉGAL</a></p>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6"> 
+                        <ul class="social-links">
+                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                            <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End bottom footer -->

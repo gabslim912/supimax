@@ -24,8 +24,9 @@ collections:
   programmes:
     title: programmes
     output: true
-email: info@supimax.com
-tel: 33 845 55 55
+adresse: Rue de Niombré x rue Aristide le Dantec
+email: supimax@supimax.com
+tel: 33 889 11 88
 description: >- # this means to ignore newlines until "baseurl:"
   Etablissement Privé d'Enseignement Supérieur, SUP'IMAX accueille chaque année des 
   candidats issus de différents horizons. L'expertise du Groupe SUP'INFO ( 23 ans) 
