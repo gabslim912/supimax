@@ -1,0 +1,33 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.title != undefined %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+    <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html',''}}">
+    {% if page.description %}
+        <meta name="description" content="{{ page.description | escape }}">
+    {% else %}
+          <meta name="description" content="{{ site.description | escape }}">
+    {% endif %}
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="{{ site.favicon }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- IcoFont CSS -->
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+</head>

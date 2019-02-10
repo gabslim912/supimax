@@ -1,0 +1,764 @@
+---
+layout: default
+---
+
+
+<!-- Hero Slider -->
+<div class="hero-slider2 owl-carousel owl-theme owl-theme-1 rs">
+    {% for slider in page.sliders %}
+    <div class="hero-slider-item" style="background-image: url({{ slider.image }});">
+        <div class="d-table">
+            <div class="d-tablecell">
+                <div class="hero-slider-text hst-text-center">
+                    <span class="welcome-text">{{ slider.title_medium }}</span>
+                    <h1>{{ slider.title_large }}</h1>
+                    <p>{{ slider.description }}</p>
+
+                    <div class="slider-btn">
+                        <a href="{{ slider.link_1 }}" class="default-btn white-btn mr-15">En savoir plus</a>
+                        <a href="{{ slider.link_2 }}" class="default-btn pink-bg">nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    
+</div>
+<!-- End Hero Slider -->
+
+<!-- About Us -->
+<section class="about-us-area">
+    <div class="container about-us-box"> 
+        <div class="row"> 
+            <div class="col-md-6 col-lg-6"> 
+                <div class="about-us-text">
+                    <h4>Bienvenue à SUP'IMAX</h4>
+                    <h2>23 ans d'expérience dans l'éducation</h2>
+                    <h5>Etablissement Privé d'Enseignement Supérieur, SUP'IMAX accueille chaque année des candidats issus de différents horizons.</h5>
+                    
+                    <p> L'expertise du Groupe SUP'INFO ( 23 ans) agréé par l'état, associée au partenariat d'entreprises réputées et d'intervenants professionnels établissent le cadre de votre prochain séjour parmi nous. SUP'IMAX c'est aussi un centre agréé de Certifications Internationales ouvert toute l'année.</p>
+                    
+                    <a href="/presentation/" class="default-btn">A Propos</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-6"> 
+                <div class="about-video-intro" style="background-image: url({{ page.video_thumb1 }});">
+                    <div class="d-table"> 
+                        <div class="d-tablecell">
+                            <div class="sonar-wrapper">
+                                <div class="sonar-emitter" data-tilt>
+                                    <a href="https://www.youtube.com/watch?v=E6_ttZom2IQ" class="play-icon popup-youtube">
+                                        <i class="icofont-play"></i>
+                                    </a>
+                                    <div class="sonar-wave"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Us -->
+
+<!-- Popular Categories -->
+<div class="ptb-100"> 
+    <div class="container">
+        <div class="categorie-slider owl-carousel owl-theme"> 
+            <div class="single-categorie cag-bg-1">
+                <a href="#">Technology</a>
+            </div>
+
+            <div class="single-categorie cag-bg-2">
+                <a href="#">Business</a>
+            </div>
+
+            <div class="single-categorie cag-bg-3">
+                <a href="#">Education</a>
+            </div>
+
+            <div class="single-categorie cag-bg-4">
+                <a href="#">Economy</a>
+            </div>
+
+            <div class="single-categorie cag-bg-5">
+                <a href="#">Humanities</a>
+            </div>
+
+            <div class="single-categorie cag-bg-6">
+                <a href="#">Social Sciences</a>
+            </div>
+
+            <div class="single-categorie cag-bg-7">
+                <a href="#">Management</a>
+            </div>
+
+            <div class="single-categorie cag-bg-8">
+                <a href="#">Journilsm</a>
+            </div>
+        </div>
+       
+    </div> 
+</div>
+<!-- End Popular Categories -->
+
+<!-- Popular courses -->
+<section class="popular-courses ptb-100">
+    <div class="container">
+        <div class="section-header">
+            <i class="icofont-education"></i>
+            <h2>Our Popular Courses</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+        </div> 
+        
+        <div class="row"> 
+            <div class="col-md-6 col-lg-4">
+                <div class="single-course mb-30">
+                    <a href="#" class="thumb-img">
+                        <span class="overly"></span>
+                        <img src="assets/img/courses/1.jpg" alt="Course Image">
+                    </a>
+
+                    <div class="course-caption">
+                        <h3><a href="#">Computer Science & Engineering</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+                        <div class="course-foot">
+                            <img src="assets/img/instruction/sm1.jpg" alt="instruction">
+                            <a href="#">Alister Cook</a>
+                            <p class="price">$149</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="single-course mb-30">
+                    <a href="#" class="thumb-img">
+                        <span class="overly"></span>
+                        <img src="assets/img/courses/2.jpg" alt="Course Image">
+                    </a>
+
+                    <div class="course-caption">
+                        <h3><a href="#">Electrical Engineering</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+                        <div class="course-foot">
+                            <img src="assets/img/instruction/sm2.jpg" alt="instruction">
+                            <a href="#">David Warner</a>
+                            <p class="price"><del>$200</del> $149</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="single-course mb-30">
+                    <a href="#" class="thumb-img">
+                        <span class="overly"></span>
+                        <img src="assets/img/courses/3.jpg" alt="Course Image">
+                    </a>
+
+                    <div class="course-caption">
+                        <h3><a href="#">Mechanical Engineering</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+                        <div class="course-foot">
+                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
+                            <a href="#">John Smith</a>
+                            <p class="price">$149</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="single-course mb-30">
+                    <a href="#" class="thumb-img">
+                        <span class="overly"></span>
+                        <img src="assets/img/courses/4.jpg" alt="Course Image">
+                    </a>
+
+                    <div class="course-caption">
+                        <h3><a href="#">Become a Mobile App Developer</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+                        <div class="course-foot">
+                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
+                            <a href="#">John Smith</a>
+                            <p class="price"><del>$200</del> $149</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="single-course mb-30">
+                    <a href="#" class="thumb-img">
+                        <span class="overly"></span>
+                        <img src="assets/img/courses/5.jpg" alt="Course Image">
+                    </a>
+
+                    <div class="course-caption">
+                        <h3><a href="#">Website Development</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+                        <div class="course-foot">
+                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
+                            <a href="#">John Smith</a>
+                            <p class="price"><del>$200</del> $149</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="single-course mb-30">
+                    <a href="#" class="thumb-img">
+                        <span class="overly"></span>
+                        <img src="assets/img/courses/6.jpg" alt="Course Image">
+                    </a>
+
+                    <div class="course-caption">
+                        <h3><a href="#">Web & Graphics Technologies</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+                        <div class="course-foot">
+                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
+                            <a href="#">John Smith</a>
+                            <p class="price"><del>$200</del> $149</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-20 text-center">
+            <a href="courses.html" class="default-btn">View All</a>
+        </div>
+    </div> 
+</section>
+<!-- End Popular courses -->
+
+<!-- CTR -->
+<div class="ctr-area ctr-bg-1 ptb-100">
+    <div class="container"> 
+        <div class="ctr-text-content">
+            <h1>Units you need background knowledge to study</h1>
+            <p>These units have requirements for previous study or background knowledge. Check the unit’s previous study requirements for details. If you have any questions, contact the unit coordinator for the semester you want to study.</p>
+            
+            <a href="register.html" class="default-btn">Apply Now</a>
+        </div>
+    </div>
+</div>
+<!-- End CTR -->
+
+<!-- Upcoming Events -->
+<section class="events-area events-area-4 ptb-100">
+    <div class="container">
+        <div class="section-header">
+            <i class="icofont-education"></i>
+            <h2>Upcoming Events</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="row"> 
+            <div class="col-lg-4"> 
+                <div class="single-event mb-20 md-width-500">
+                    <a href="#">
+                        <img src="assets/img/event/1.jpg" alt="Event Image">
+                    </a>
+
+                    <div class="event-caption ec-pb-50">
+                        <span class="date">
+                            <i class="icofont-calendar"></i> 10 Nov, 2019
+                        </span>
+                        <h3><a href="#">Creative Design</a></h3>
+                        <p>Excepteur sint occaecat cupidatat sunt culpa qui officia deserunt mollit anim id.</p>
+                        <ul>
+                            <li><i class="icofont-clock-time"></i> 2.30pm - 5.30pm</li>
+                            <li><i class="icofont-location-pin"></i> Canada, Vancouver</li>
+                        </ul>
+                        <div class="b-absolute text-center">
+                            <a href="#" class="book-now-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="single-event mb-20 md-width-500">
+                    <a href="#">
+                        <img src="assets/img/event/2.jpg" alt="Event Image">
+                    </a>
+                    <div class="event-caption ec-pb-50">
+                        <span class="date">
+                            <i class="icofont-calendar"></i> 10 Nov, 2019
+                        </span>
+                        <h3><a href="#">Best Leadership</a></h3>
+                        <p>Excepteur sint occaecat cupidatat sunt culpa qui officia deserunt mollit anim id.</p>
+                        <ul>
+                            <li><i class="icofont-clock-time"></i> 2.30pm - 5.30pm</li>
+                            <li><i class="icofont-location-pin"></i> Canada, Vancouver</li>
+                        </ul>
+                        <div class="b-absolute text-center">
+                            <a href="#" class="book-now-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="single-event mb-20 md-width-500">
+                    <a href="#">
+                        <img src="assets/img/event/3.jpg" alt="Event Image">
+                    </a>
+                    <div class="event-caption ec-pb-50">
+                        <span class="date">
+                            <i class="icofont-calendar"></i> 10 Nov, 2019
+                        </span>
+                        <h3><a href="#">Graduation Party</a></h3>
+                        <p>Excepteur sint occaecat cupidatat sunt culpa qui officia deserunt mollit anim id.</p>
+                        <ul>
+                            <li><i class="icofont-clock-time"></i> 2.30pm - 5.30pm</li>
+                            <li><i class="icofont-location-pin"></i> Canada, Vancouver</li>
+                        </ul>
+                        <div class="b-absolute text-center">
+                            <a href="#" class="book-now-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Upcoming Events -->
+
+<!-- Why choose us -->
+<section class="why-choose-us gray-bg pt-100 pb-70">
+    <div class="container">
+        <div class="section-header">
+            <i class="icofont-education"></i>
+            <h2>Why Choose us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="row"> 
+            <div class="col-md-6 col-lg-4"> 
+                <div class="single-reason mb-30" data-tilt>
+                    <div class="reason-icon">
+                        <i class="icofont-man-in-glasses"></i>
+                    </div>
+                    <h3>Experienced Tutor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4"> 
+                <div class="single-reason active-hover mb-30" data-tilt>
+                    <div class="reason-icon">
+                        <i class="icofont-book-alt"></i>
+                    </div>
+                    <h3>Popular Courses</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4"> 
+                <div class="single-reason mb-50" data-tilt>
+                    <div class="reason-icon">
+                        <i class="icofont-read-book"></i>
+                    </div>
+                    <h3>Modern Library</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4"> 
+                <div class="single-reason active-hover mb-50" data-tilt>
+                    <div class="reason-icon">
+                        <i class="icofont-graduate-alt"></i>
+                    </div>
+                    <h3>Trending Courses</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4"> 
+                <div class="single-reason mb-50" data-tilt>
+                    <div class="reason-icon">
+                        <i class="icofont-live-support"></i>
+                    </div>
+                    <h3>24/7 Hours Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4"> 
+                <div class="single-reason active-hover mb-50" data-tilt>
+                    <div class="reason-icon">
+                        <i class="icofont-graduate"></i>
+                    </div>
+                    <h3>Certification</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Why choose us -->
+
+<!-- Video area -->
+<div class="video-area">
+    <div class="d-table"> 
+        <div class="d-tablecell">
+            <div class="sonar-wrapper">
+                <div class="sonar-emitter" data-tilt>
+                    <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="play-icon popup-youtube">
+                        <i class="icofont-play"></i>
+                    </a>
+                    <div class="sonar-wave"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Video area -->
+
+<!-- Our Experienced Tutor -->
+<section class="experienced-tutor bg-none pt-100 pb-70">
+    <div class="container">
+        <div class="section-header">
+            <i class="icofont-education"></i>
+            <h2>Our Experienced Tutor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="row"> 
+            <div class="col-sm-6 col-md-6 col-lg-3"> 
+                <div class="single-tutor st-active-hover" data-tilt>
+                    <img src="assets/img/tutor/1.png" alt="tutor">
+                    
+                    <div class="tutor-title">
+                        <h3>Jason Statham</h3>
+                        <p>PHP Teacher</p>
+                    </div>
+                    <p class="email-link"><a href="#">jason@gmail.com</a></p>
+                    <ul> 
+                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                        <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-3"> 
+                <div class="single-tutor st-active-hover" data-tilt>
+                    <img src="assets/img/tutor/2.png" alt="tutor">
+                    
+                    <div class="tutor-title">
+                        <h3>Olivia Lucy</h3>
+                        <p>JavaScript Teacher</p>
+                    </div>
+                    <p class="email-link"><a href="#">olivialucy@gmail.com</a></p>
+                    <ul> 
+                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                        <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-3"> 
+                <div class="single-tutor st-active-hover" data-tilt>
+                    <img src="assets/img/tutor/3.png" alt="tutor">
+                    
+                    <div class="tutor-title">
+                        <h3>David Warner</h3>
+                        <p>ReactJS Teacher</p>
+                    </div>
+                    <p class="email-link"><a href="#">warner@gmail.com</a></p>
+                    <ul> 
+                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                        <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-3"> 
+                <div class="single-tutor st-active-hover" data-tilt>
+                    <img src="assets/img/tutor/4.png" alt="tutor">
+                    
+                    <div class="tutor-title">
+                        <h3>Smith Lucy</h3>
+                        <p>PHP Teacher</p>
+                    </div>
+                    <p class="email-link"><a href="#">smithlucy@gmail.com</a></p>
+                    <ul> 
+                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                        <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Experienced Tutor -->
+
+<!-- CTR -->
+<div class="ctr-area ctr-bg-2 ptb-100">
+    <div class="container"> 
+        <div class="ctr-text-content">
+            <h1>Units you need background knowledge to study</h1>
+            <p>These units have requirements for previous study or background knowledge. Check the unit’s previous study requirements for details. If you have any questions, contact the unit coordinator for the semester you want to study.</p>
+            
+            <a href="register.html" class="default-btn">Join Now</a>
+        </div>
+    </div>
+</div>
+<!-- End CTR -->
+
+<!-- Our Feedback -->
+<section class="our-feedback ptb-100">
+    <div class="container">
+        <div class="section-header">
+            <i class="icofont-education"></i>
+            <h2>Our Feedback</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="feedback-carosel owl-carousel owl-theme owl-theme-s2">
+            <!-- Feedback #1 -->
+            <div class="single-feedback">
+                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
+                
+                <div class="client-info">
+                    <img src="assets/img/instruction/sm1.jpg" alt="client">
+                    
+                    <h3>Shan Willamson</h3>
+                    <span>Founder at WHDF</span>
+                </div>
+                
+                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
+            </div>
+            
+            <!-- Feedback #2 -->
+            <div class="single-feedback">
+                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
+                
+                <div class="client-info">
+                    <img src="assets/img/instruction/sm2.jpg" alt="client">
+                    
+                    <h3>Shan Willamson</h3>
+                    <span>Founder at WHDF</span>
+                </div>
+                
+                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
+            </div>
+            
+            <!-- Feedback #3 -->
+            <div class="single-feedback">
+                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
+                
+                <div class="client-info">
+                    <img src="assets/img/instruction/sm3.jpg" alt="client">
+                    
+                    <h3>Shan Willamson</h3>
+                    <span>Founder at WHDF</span>
+                </div>
+                
+                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
+            </div>
+            
+            <!-- Feedback #4 -->
+            <div class="single-feedback">
+                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
+                
+                <div class="client-info">
+                    <img src="assets/img/instruction/sm1.jpg" alt="client">
+                    
+                    <h3>Shan Willamson</h3>
+                    <span>Founder at WHDF</span>
+                </div>
+                
+                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
+            </div>
+            
+            <!-- Feedback #5 -->
+            <div class="single-feedback">
+                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
+                
+                <div class="client-info">
+                    <img src="assets/img/instruction/sm2.jpg" alt="client">
+                    
+                    <h3>Shan Willamson</h3>
+                    <span>Founder at WHDF</span>
+                </div>
+                
+                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
+            </div>
+            
+            <!-- Feedback #6 -->
+            <div class="single-feedback">
+                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
+                
+                <div class="client-info">
+                    <img src="assets/img/instruction/sm3.jpg" alt="client">
+                    
+                    <h3>Shan Willamson</h3>
+                    <span>Founder at WHDF</span>
+                </div>
+                
+                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Feedback -->
+
+<!-- Latest News -->
+<section class="latest-news gray-bg pt-100 pb-70">
+    <div class="container">
+        <div class="section-header">
+            <i class="icofont-education"></i>
+            <h2>Latest News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="single-blog-post">
+                    <a href="#"><img src="assets/img/blog/1.jpg" alt="Blog Image"></a>
+
+                    <div class="blog-post-content">
+                        <span>
+                            <i class="icofont-ui-calendar"></i> 18 Jan 2019
+                        </span>
+                        <h3><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</a></h3>
+                        <a href="#" class="default-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="single-blog-post">
+                    <a href="#"><img src="assets/img/blog/2.jpg" alt="Blog Image"></a>
+
+                    <div class="blog-post-content">
+                        <span>
+                            <i class="icofont-ui-calendar"></i> 18 Jan 2019
+                        </span>
+                        <h3><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</a></h3>
+                        <a href="#" class="default-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+   
+            <div class="col-lg-4">
+                <div class="text-blog">
+                    <span class="date">
+                        <i class="icofont-ui-calendar"></i> 18 Jan 2019
+                    </span>
+                    <h3>
+                        <a href="#">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+                            <i class="icofont-thin-right"></i>
+                        </a>
+                    </h3>
+                </div>
+                
+                <div class="text-blog">
+                    <span class="date">
+                        <i class="icofont-ui-calendar"></i> 18 Jan 2019
+                    </span>
+                    <h3>
+                        <a href="#">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+                            <i class="icofont-thin-right"></i>
+                        </a>
+                    </h3>
+                </div>
+                
+                <div class="text-blog">
+                    <span class="date">
+                        <i class="icofont-ui-calendar"></i> 18 Jan 2019
+                    </span>
+                    <h3>
+                        <a href="#">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+                            <i class="icofont-thin-right"></i>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Latest News -->
+
+<!-- Our Partner -->
+<div class="our-partner pt-100 pb-180">
+   <div class="container">
+       <div class="partner-carosel owl-carousel owl-theme owl-theme-s2">
+            <!-- Partner #1 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/1.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #2 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/2.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #3 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/3.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #4 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/4.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #5 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/5.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #6 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/1.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #7 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/2.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #8 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/3.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #9 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/4.png" alt="partner"></a>
+            </div>
+            
+            <!-- Partner #10 -->
+            <div class="single-partner">
+               <a href="#"><img src="assets/img/partner/5.png" alt="partner"></a>
+            </div>
+       </div>
+   </div>
+</div>
+<!-- End Our Partner -->
