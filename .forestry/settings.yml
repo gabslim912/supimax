@@ -9,6 +9,8 @@ sections:
   label: Domaines
   create: all
   match: "**/*"
+  templates:
+  - domaines
 - type: jekyll-posts
   label: Posts
   create: all
