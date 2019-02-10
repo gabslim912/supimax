@@ -85,239 +85,61 @@ layout: default
     <div class="container">
         <div class="section-header">
             <i class="icofont-education"></i>
-            <h2>Our Popular Courses</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+            <h2>Programme Académique</h2>
+            <p>Le programme SUP'IMAX de Licences et Masters Professionnelle est axé sur trois grands domaines de spécialité :</p>
         </div> 
         
         <div class="row"> 
+            {% for programme in site.programmes %}
             <div class="col-md-6 col-lg-4">
                 <div class="single-course mb-30">
                     <a href="#" class="thumb-img">
                         <span class="overly"></span>
-                        <img src="assets/img/courses/1.jpg" alt="Course Image">
+                        <img src="{{ programme.image }}" alt="{{ programme.title }}" style="width: 350px; height: 202px;">
                     </a>
 
                     <div class="course-caption">
-                        <h3><a href="#">Computer Science & Engineering</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <h3><a href="#">{{ programme.title }}</a></h3>
+                        <p class="text-justify">{{ programme.description }}</p>
 
                         <div class="course-foot">
-                            <img src="assets/img/instruction/sm1.jpg" alt="instruction">
-                            <a href="#">Alister Cook</a>
-                            <p class="price">$149</p>
+                          
+                          <a href="#"><i class="icofont-graduate-alt"></i>{{ programme.diplomes }}</a>
+                            
                         </div>
                     </div>
                 </div>
             </div>
+            {% endfor %}
             
-            <div class="col-md-6 col-lg-4">
-                <div class="single-course mb-30">
-                    <a href="#" class="thumb-img">
-                        <span class="overly"></span>
-                        <img src="assets/img/courses/2.jpg" alt="Course Image">
-                    </a>
-
-                    <div class="course-caption">
-                        <h3><a href="#">Electrical Engineering</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-                        <div class="course-foot">
-                            <img src="assets/img/instruction/sm2.jpg" alt="instruction">
-                            <a href="#">David Warner</a>
-                            <p class="price"><del>$200</del> $149</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="single-course mb-30">
-                    <a href="#" class="thumb-img">
-                        <span class="overly"></span>
-                        <img src="assets/img/courses/3.jpg" alt="Course Image">
-                    </a>
-
-                    <div class="course-caption">
-                        <h3><a href="#">Mechanical Engineering</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-                        <div class="course-foot">
-                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
-                            <a href="#">John Smith</a>
-                            <p class="price">$149</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="single-course mb-30">
-                    <a href="#" class="thumb-img">
-                        <span class="overly"></span>
-                        <img src="assets/img/courses/4.jpg" alt="Course Image">
-                    </a>
-
-                    <div class="course-caption">
-                        <h3><a href="#">Become a Mobile App Developer</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-                        <div class="course-foot">
-                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
-                            <a href="#">John Smith</a>
-                            <p class="price"><del>$200</del> $149</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="single-course mb-30">
-                    <a href="#" class="thumb-img">
-                        <span class="overly"></span>
-                        <img src="assets/img/courses/5.jpg" alt="Course Image">
-                    </a>
-
-                    <div class="course-caption">
-                        <h3><a href="#">Website Development</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-                        <div class="course-foot">
-                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
-                            <a href="#">John Smith</a>
-                            <p class="price"><del>$200</del> $149</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="single-course mb-30">
-                    <a href="#" class="thumb-img">
-                        <span class="overly"></span>
-                        <img src="assets/img/courses/6.jpg" alt="Course Image">
-                    </a>
-
-                    <div class="course-caption">
-                        <h3><a href="#">Web & Graphics Technologies</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-                        <div class="course-foot">
-                            <img src="assets/img/instruction/sm3.jpg" alt="instruction">
-                            <a href="#">John Smith</a>
-                            <p class="price"><del>$200</del> $149</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         
         <div class="mt-20 text-center">
-            <a href="courses.html" class="default-btn">View All</a>
+            <a href="/admissions/" class="default-btn">Conditions d'admission</a>
         </div>
     </div> 
 </section>
 <!-- End Popular courses -->
 
 <!-- CTR -->
-<div class="ctr-area ctr-bg-1 ptb-100">
+<div class="ctr-area ptb-100" style="background-image: url({{ page.parallax1 }});">
     <div class="container"> 
         <div class="ctr-text-content">
-            <h1>Units you need background knowledge to study</h1>
-            <p>These units have requirements for previous study or background knowledge. Check the unit’s previous study requirements for details. If you have any questions, contact the unit coordinator for the semester you want to study.</p>
+            <h1>SUP'MAX - PROGRAMME 2019</h1>
+            <p>Le service d'orientation de SUP'IMAX se préoccupe en premier lieu de répondre à vos questions et de vous faire découvrir les différentes opportunités de carrières qui se présenteront à vous. Contactez nous pour en savoir plus!</p>
             
-            <a href="register.html" class="default-btn">Apply Now</a>
+            <a href="/contact/" class="default-btn">CONTACTEZ NOUS</a>
         </div>
     </div>
 </div>
 <!-- End CTR -->
-
-<!-- Upcoming Events -->
-<section class="events-area events-area-4 ptb-100">
-    <div class="container">
-        <div class="section-header">
-            <i class="icofont-education"></i>
-            <h2>Upcoming Events</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
-        </div>
-        
-        <div class="row"> 
-            <div class="col-lg-4"> 
-                <div class="single-event mb-20 md-width-500">
-                    <a href="#">
-                        <img src="assets/img/event/1.jpg" alt="Event Image">
-                    </a>
-
-                    <div class="event-caption ec-pb-50">
-                        <span class="date">
-                            <i class="icofont-calendar"></i> 10 Nov, 2019
-                        </span>
-                        <h3><a href="#">Creative Design</a></h3>
-                        <p>Excepteur sint occaecat cupidatat sunt culpa qui officia deserunt mollit anim id.</p>
-                        <ul>
-                            <li><i class="icofont-clock-time"></i> 2.30pm - 5.30pm</li>
-                            <li><i class="icofont-location-pin"></i> Canada, Vancouver</li>
-                        </ul>
-                        <div class="b-absolute text-center">
-                            <a href="#" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="single-event mb-20 md-width-500">
-                    <a href="#">
-                        <img src="assets/img/event/2.jpg" alt="Event Image">
-                    </a>
-                    <div class="event-caption ec-pb-50">
-                        <span class="date">
-                            <i class="icofont-calendar"></i> 10 Nov, 2019
-                        </span>
-                        <h3><a href="#">Best Leadership</a></h3>
-                        <p>Excepteur sint occaecat cupidatat sunt culpa qui officia deserunt mollit anim id.</p>
-                        <ul>
-                            <li><i class="icofont-clock-time"></i> 2.30pm - 5.30pm</li>
-                            <li><i class="icofont-location-pin"></i> Canada, Vancouver</li>
-                        </ul>
-                        <div class="b-absolute text-center">
-                            <a href="#" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="single-event mb-20 md-width-500">
-                    <a href="#">
-                        <img src="assets/img/event/3.jpg" alt="Event Image">
-                    </a>
-                    <div class="event-caption ec-pb-50">
-                        <span class="date">
-                            <i class="icofont-calendar"></i> 10 Nov, 2019
-                        </span>
-                        <h3><a href="#">Graduation Party</a></h3>
-                        <p>Excepteur sint occaecat cupidatat sunt culpa qui officia deserunt mollit anim id.</p>
-                        <ul>
-                            <li><i class="icofont-clock-time"></i> 2.30pm - 5.30pm</li>
-                            <li><i class="icofont-location-pin"></i> Canada, Vancouver</li>
-                        </ul>
-                        <div class="b-absolute text-center">
-                            <a href="#" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Upcoming Events -->
 
 <!-- Why choose us -->
 <section class="why-choose-us gray-bg pt-100 pb-70">
     <div class="container">
         <div class="section-header">
             <i class="icofont-education"></i>
-            <h2>Why Choose us</h2>
+            <h2>Pourquoi nous choisir?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
         </div>
         

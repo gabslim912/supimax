@@ -18,7 +18,8 @@ sliders:
   link_2: "/contact"
   image: "/uploads/slide4.jpg"
 image_1: "/uploads/43110262_310129879718923_7967312957128310784_n.jpg"
-video_thumb1: "/uploads/slide4.jpg"
+video_thumb1: "/uploads/background2.jpg"
+parallax1: "/uploads/background1.jpg"
 diplomes:
 - BTS
 - BT
