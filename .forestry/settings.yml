@@ -9,6 +9,8 @@ sections:
   label: progammes
   create: all
   match: "**/*"
+  templates:
+  - programmes
 - type: directory
   path: _domaines
   label: Domaines
