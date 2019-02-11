@@ -1,0 +1,14 @@
+---
+label: pages
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: layout
+  label: layout
