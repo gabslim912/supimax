@@ -1,0 +1,14 @@
+---
+label: commentaires
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: nom
+  label: nom
+- type: text
+  name: profession
+  label: profession
+- type: file
+  name: image
+  label: photo de profil
