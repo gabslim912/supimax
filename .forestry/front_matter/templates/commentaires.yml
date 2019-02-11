@@ -12,4 +12,4 @@ fields:
 - type: file
   name: image
   label: photo de profil
-  default: "/uploads/sm1.jpg"
+  default: "/uploads/professionnel.jpg"
