@@ -20,9 +20,3 @@ fields:
 - type: file
   name: image
   label: image
-pages:
-- _posts/sénégal-les-travailleurs-de-tigo-préoccupés-par-la-dégradation-de-la-situation-de-l-entreprise.md
-- _posts/sénégal-la-recette-du-succès-en-matière-de-tic.md
-- _posts/cybercriminalité-au-sénégal-les-victimes-peuvent-saisir-la-gendarmerie.md
-- _posts/omar-cissé-nous-sommes-très-satisfaits-du-développement-de-in-touch-aujourd-hui.md
-- _posts/contrôle-des-flux-téléphoniques-en-rd-congo-que-reprochent-les-opérateurs-à-l-etat.md

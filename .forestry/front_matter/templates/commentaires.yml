@@ -14,7 +14,7 @@ fields:
   label: photo de profil
   default: "/uploads/professionnel.jpg"
 pages:
-- _commentaires/YANNICK.md
 - _commentaires/Andy ASSA.md
+- _commentaires/YANNICK.md
 - _commentaires/Atangana.md
 - _commentaires/Secouna badji.md
