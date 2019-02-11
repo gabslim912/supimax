@@ -13,3 +13,5 @@ fields:
   name: image
   label: photo de profil
   default: "/uploads/professionnel.jpg"
+pages:
+- _commentaires/Andy ASSA.md
