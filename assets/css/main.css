@@ -3372,7 +3372,6 @@ a.back-button:hover {
     Footer CSS 
 ==================================== */
 .footer-area {
-    background-image: url(../../assets/img/footer-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

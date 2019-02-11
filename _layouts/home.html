@@ -15,8 +15,8 @@ layout: default
                     <p>{{ slider.description }}</p>
 
                     <div class="slider-btn">
-                        <a href="{{ slider.link_1 }}" class="default-btn white-btn mr-15">En savoir plus</a>
-                        <a href="{{ slider.link_2 }}" class="default-btn pink-bg">nous contacter</a>
+                        <a href="{{ slider.link_1 }}" target="blank" class="default-btn white-btn mr-15">En savoir plus</a>
+                        <a href="{{ slider.link_2 }}" target="blank" class="default-btn pink-bg">nous contacter</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ layout: default
                     
                     <p> L'expertise du Groupe SUP'INFO ( 23 ans) agréé par l'état, associée au partenariat d'entreprises réputées et d'intervenants professionnels établissent le cadre de votre prochain séjour parmi nous. SUP'IMAX c'est aussi un centre agréé de Certifications Internationales ouvert toute l'année.</p>
                     
-                    <a href="/presentation/" class="default-btn">A Propos</a>
+                    <a href="/presentation/" target="blank" class="default-btn">A Propos</a>
                 </div>
             </div>
             
@@ -115,7 +115,7 @@ layout: default
         </div>
         
         <div class="mt-20 text-center">
-            <a href="/admissions/" class="default-btn">Conditions d'admission</a>
+            <a href="/admission/" target="blank" class="default-btn">Conditions d'admission</a>
         </div>
     </div> 
 </section>
@@ -128,7 +128,7 @@ layout: default
             <h1>SUP'MAX - PROGRAMME 2019</h1>
             <p>Le service d'orientation de SUP'IMAX se préoccupe en premier lieu de répondre à vos questions et de vous faire découvrir les différentes opportunités de carrières qui se présenteront à vous. Contactez nous pour en savoir plus!</p>
             
-            <a href="/contact/" class="default-btn">CONTACTEZ NOUS</a>
+            <a href="/contact/" target="blank" class="default-btn">CONTACTEZ NOUS</a>
         </div>
     </div>
 </div>
@@ -202,94 +202,26 @@ layout: default
     <div class="container">
         <div class="section-header">
             <i class="icofont-education"></i>
-            <h2>Our Feedback</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+            <h2>Les Témoignages</h2>
+            <p>Découvrez les différents témoignages des personnes qui ont eu à découvrir notre institut</p>
         </div>
         
         <div class="feedback-carosel owl-carousel owl-theme owl-theme-s2">
             <!-- Feedback #1 -->
+            {% for commentaire in site.commentaires %}
             <div class="single-feedback">
-                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
+                <p class="text-justify">{{ commentaire.content }}</p>
                 
                 <div class="client-info">
-                    <img src="assets/img/instruction/sm1.jpg" alt="client">
+                    <img src="{{ commentaire.image }}" alt="{{ commentaire.nom }}">
                     
-                    <h3>Shan Willamson</h3>
-                    <span>Founder at WHDF</span>
+                    <h3>{{ commentaire.nom }}</h3>
+                    <span>{{ commentaire.profession }}</span>
                 </div>
                 
                 <img src="assets/img/quote.png" class="quote-icon" alt="quote">
             </div>
-            
-            <!-- Feedback #2 -->
-            <div class="single-feedback">
-                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
-                
-                <div class="client-info">
-                    <img src="assets/img/instruction/sm2.jpg" alt="client">
-                    
-                    <h3>Shan Willamson</h3>
-                    <span>Founder at WHDF</span>
-                </div>
-                
-                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
-            </div>
-            
-            <!-- Feedback #3 -->
-            <div class="single-feedback">
-                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
-                
-                <div class="client-info">
-                    <img src="assets/img/instruction/sm3.jpg" alt="client">
-                    
-                    <h3>Shan Willamson</h3>
-                    <span>Founder at WHDF</span>
-                </div>
-                
-                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
-            </div>
-            
-            <!-- Feedback #4 -->
-            <div class="single-feedback">
-                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
-                
-                <div class="client-info">
-                    <img src="assets/img/instruction/sm1.jpg" alt="client">
-                    
-                    <h3>Shan Willamson</h3>
-                    <span>Founder at WHDF</span>
-                </div>
-                
-                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
-            </div>
-            
-            <!-- Feedback #5 -->
-            <div class="single-feedback">
-                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
-                
-                <div class="client-info">
-                    <img src="assets/img/instruction/sm2.jpg" alt="client">
-                    
-                    <h3>Shan Willamson</h3>
-                    <span>Founder at WHDF</span>
-                </div>
-                
-                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
-            </div>
-            
-            <!-- Feedback #6 -->
-            <div class="single-feedback">
-                <p>Lorem ipsum amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Labore dolore magna aliqua.</p>
-                
-                <div class="client-info">
-                    <img src="assets/img/instruction/sm3.jpg" alt="client">
-                    
-                    <h3>Shan Willamson</h3>
-                    <span>Founder at WHDF</span>
-                </div>
-                
-                <img src="assets/img/quote.png" class="quote-icon" alt="quote">
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -315,75 +247,40 @@ layout: default
     <div class="container">
         <div class="section-header">
             <i class="icofont-education"></i>
-            <h2>Latest News</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
+            <h2>Dernieres nouvelles</h2>
+            <p>Découvrez les derniers articles rédigés par notre rédaction </p>
         </div>
         
         <div class="row">
+          {% for post in site.posts limit: 2 %}
             <div class="col-md-6 col-lg-4">
                 <div class="single-blog-post">
-                    <a href="#"><img src="assets/img/blog/1.jpg" alt="Blog Image"></a>
+                    <a href="#"><img src="{{ post.image }}" alt="{{ post.title }}" style="width: 360px; height: 235px;"></a>
 
                     <div class="blog-post-content">
                         <span>
-                            <i class="icofont-ui-calendar"></i> 18 Jan 2019
+                            <i class="icofont-ui-calendar"></i> {{ post.date }}
                         </span>
-                        <h3><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</a></h3>
-                        <a href="#" class="default-btn">Read More</a>
+                        <h3><a href="#">{{ post.title }}</a></h3>
+                        <a href="#" class="default-btn">Lire la suite</a>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="single-blog-post">
-                    <a href="#"><img src="assets/img/blog/2.jpg" alt="Blog Image"></a>
-
-                    <div class="blog-post-content">
-                        <span>
-                            <i class="icofont-ui-calendar"></i> 18 Jan 2019
-                        </span>
-                        <h3><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</a></h3>
-                        <a href="#" class="default-btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-   
+          {% endfor %}
             <div class="col-lg-4">
+              {% for post in site.posts offset:1 limit: 3 %}
                 <div class="text-blog">
                     <span class="date">
-                        <i class="icofont-ui-calendar"></i> 18 Jan 2019
+                        <i class="icofont-ui-calendar"></i> {{ post.date }}
                     </span>
                     <h3>
                         <a href="#">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+                            {{ post.title }} 
                             <i class="icofont-thin-right"></i>
                         </a>
                     </h3>
                 </div>
-                
-                <div class="text-blog">
-                    <span class="date">
-                        <i class="icofont-ui-calendar"></i> 18 Jan 2019
-                    </span>
-                    <h3>
-                        <a href="#">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-                            <i class="icofont-thin-right"></i>
-                        </a>
-                    </h3>
-                </div>
-                
-                <div class="text-blog">
-                    <span class="date">
-                        <i class="icofont-ui-calendar"></i> 18 Jan 2019
-                    </span>
-                    <h3>
-                        <a href="#">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-                            <i class="icofont-thin-right"></i>
-                        </a>
-                    </h3>
-                </div>
+              {% endfor %}
             </div>
         </div>
     </div>

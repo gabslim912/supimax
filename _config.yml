@@ -24,6 +24,12 @@ collections:
   programmes:
     title: programmes
     output: true
+  commentaires:
+    title: commentaires
+    output: true
+  partenaires:
+    title: partenaires
+    output: true
 adresse: Rue de Niombré x rue Aristide le Dantec
 email: supimax@supimax.com
 tel: 33 889 11 88
