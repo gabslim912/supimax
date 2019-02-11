@@ -5,6 +5,20 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _domaines
+  label: Domaines
+  create: all
+  match: "**/*"
+  templates:
+  - domaines
+- type: directory
+  path: _programmes
+  label: Progammes
+  create: all
+  match: "**/*"
+  templates:
+  - programmes
+- type: directory
   path: _commentaires
   label: Commentaires
   create: all
@@ -12,19 +26,12 @@ sections:
   templates:
   - commentaires
 - type: directory
-  path: _programmes
-  label: progammes
+  path: _partenaires
+  label: Partenaires
   create: all
   match: "**/*"
   templates:
-  - programmes
-- type: directory
-  path: _domaines
-  label: Domaines
-  create: all
-  match: "**/*"
-  templates:
-  - domaines
+  - partenaires
 - type: jekyll-posts
   label: Posts
   create: all
