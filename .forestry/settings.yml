@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _commentaires
+  label: Commentaires
+  create: all
+  match: "**/*"
+  templates:
+  - commentaires
+- type: directory
   path: _programmes
   label: progammes
   create: all
@@ -21,6 +28,8 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - posts
 - type: jekyll-pages
   label: Pages
   create: all
