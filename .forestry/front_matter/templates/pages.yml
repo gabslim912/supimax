@@ -1,7 +1,6 @@
 ---
 label: pages
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -14,6 +13,6 @@ fields:
   label: layout
 pages:
 - actualités.md
-- présentation.md
-- admission.md
 - contact.md
+- admission.md
+- présentation.md

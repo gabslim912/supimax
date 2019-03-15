@@ -1,7 +1,6 @@
 ---
 label: partenaires
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -10,9 +9,9 @@ fields:
   name: image
   label: image
 pages:
-- _partenaires/microsoft.md
-- _partenaires/linux.md
-- _partenaires/ibm.md
-- _partenaires/oracle.md
-- _partenaires/sage.md
 - _partenaires/comptia.md
+- _partenaires/ibm.md
+- _partenaires/linux.md
+- _partenaires/microsoft.md
+- _partenaires/sage.md
+- _partenaires/oracle.md

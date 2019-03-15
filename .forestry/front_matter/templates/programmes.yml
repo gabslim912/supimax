@@ -1,7 +1,6 @@
 ---
 label: programmes
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -16,6 +15,6 @@ fields:
   name: image
   label: image
 pages:
-- _programmes/arts-graphiques-numérique.md
-- _programmes/audiovisuel-numérique.md
 - _programmes/communication-digitale.md
+- _programmes/audiovisuel-numérique.md
+- _programmes/arts-graphiques-numérique.md

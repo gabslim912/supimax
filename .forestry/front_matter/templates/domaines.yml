@@ -1,7 +1,6 @@
 ---
 label: domaines
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: title
@@ -10,8 +9,8 @@ fields:
   name: image
   label: image
 pages:
-- _domaines/informatique.md
-- _domaines/infographie.md
-- _domaines/audiovisuel.md
-- _domaines/cinématographie.md
 - _domaines/community-management.md
+- _domaines/cinématographie.md
+- _domaines/audiovisuel.md
+- _domaines/infographie.md
+- _domaines/informatique.md

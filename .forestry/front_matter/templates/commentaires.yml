@@ -1,7 +1,6 @@
 ---
 label: commentaires
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: nom
@@ -14,7 +13,7 @@ fields:
   label: photo de profil
   default: "/uploads/professionnel.jpg"
 pages:
-- _commentaires/Andy ASSA.md
-- _commentaires/YANNICK.md
-- _commentaires/Atangana.md
 - _commentaires/Secouna badji.md
+- _commentaires/Atangana.md
+- _commentaires/YANNICK.md
+- _commentaires/Andy ASSA.md

@@ -6,5 +6,6 @@ description: 'Ces programmes sont accessibles toute l''année, pour une durée d
 diplomes: MP & LP
 image: "/uploads/informatique.jpg"
 date: 2019-02-10 14:05:27 +0000
+published: false
 
 ---
